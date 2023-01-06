@@ -10,11 +10,11 @@ import WorkIcon from '@mui/icons-material/Work';
 function Experiences() {
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#3e497a">
+      <VerticalTimeline lineColor="#2C5F2D">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2010 - 2014"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#2C5F2D", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -25,7 +25,7 @@ function Experiences() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2014 - 2018"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          iconStyle={{ background: "#2C5F2D", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -41,7 +41,7 @@ function Experiences() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2018 - 2020"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#2C5F2D", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -56,7 +56,7 @@ function Experiences() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2020 - present"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "#2C5F2D", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">

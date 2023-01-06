@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
-    height: 100px;
-    background: #21325e;
+    height: 60px;
+    background: #2C5F2D;
   }
   
   .links {
@@ -14,10 +14,22 @@
   }
   
   .navbar a {
-    color: white;
+    color: #97BC62FF;
     text-decoration: none;
     margin: 20px;
-    font-size: 25px;
+    font-size: 16px;
+    position: relative;
+  }
+
+  .active::before {
+    background-color: #97BC62FF;
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    top: 6px;
+    left: -15px;
   }
   
   .toggleButton {

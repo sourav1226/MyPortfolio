@@ -8,13 +8,14 @@ import "../style/Footer.css";
 function Footer() {
   return (
     <div className='footer'>
+      <div className='main-container'>
         <div className='socialMedia'>
-           <GitHubIcon/> 
-           <LinkedInIcon/>
-           <FacebookIcon/>   
-        </div>
-        
-        <p> &copy; 2023 souravg.tech</p>
+            <GitHubIcon/> 
+            <LinkedInIcon/>
+            <FacebookIcon/>   
+          </div>
+          <p> &copy; 2023 souravg.tech</p>
+      </div>
     </div>
   )
 }
