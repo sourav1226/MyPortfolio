@@ -37,6 +37,7 @@
     color: #ffca28;
     margin: 0px;
     font-family: 'PT Sans', sans-serif;
+    font-size: calc(16px + 1.5vmin);
   }
   .prompt h3 span {
     color: #97BC62FF;
@@ -64,7 +65,7 @@
     border: 1px solid rgb(197, 233, 147);
   }
   .about p{
-    font-size: 18px;
+    font-size: calc(11px + .5vmin);
     margin-top: 5px;
     display: flex;
     align-items: center;
@@ -75,10 +76,14 @@
     margin-left:5px;
     color: #97BC62FF;
   }
+  .button-sec-home {
+    display: flex;
+    gap: 15px;
+  }
   
   .skills {
-    font-size: 35px;
     width: 100%;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -88,11 +93,12 @@
   
   .skills h1 {
     color: #2C5F2D;
+    font-size: calc(16px + 10vmin);
   }
 
   .skills h2 {
     margin-bottom: 0;
-    color: #2C5F2D;
+    color: #dddddd;
     font-size: 32px;
   }
   
@@ -102,12 +108,17 @@
   }
   
   .list span {
-    font-size: 20px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+  }
+  .button-sec-home a{
+    text-decoration: none;
   }
   
   @media only screen and (max-width: 600px) {
     .about h2 {
-      font-size: 40px;
+      font-size: calc(16px + 1.5vmin);
     }
   
     .about .prompt {
@@ -117,13 +128,24 @@
     }
   
     .skills {
-      text-align: center;
+      text-align: start;
     }
     .list {
       padding: 0;
     }
   
     .skills h2 {
-      font-size: 30px;
+      font-size: calc(16px + 1.5vmin);
     }
+    .skills .list {
+      width: 80%;
+  }
+  }
+  @media only screen and (max-width: 600px) {
+    .prompt h3 {
+      font-size: calc(16px + .9vmin);
+    }
+    .about p {
+      font-size: calc(9px + .5vmin);
+  }
   }

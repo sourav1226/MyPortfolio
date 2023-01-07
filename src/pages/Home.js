@@ -6,10 +6,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
 import DownloadForOfflineOutlinedIcon from '@mui/icons-material/DownloadForOfflineOutlined';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
     var text = "< FullStack />";
+    var skill_1 = "< FrontEnd />";
+    var skill_2 = "< BackEnd />";
+    var skill_3 = "< ProgrammingLanguages />";
     return (
         <div className='home'>
             <div className='about'>
@@ -27,21 +31,25 @@ function Home() {
                     <LinkedInIcon />
                     <FacebookRoundedIcon />
                 </div>
-                <Button variant="outlined" endIcon={<DownloadForOfflineOutlinedIcon />}>Download Resume</Button>
+                <div className='button-sec-home'>
+                {/* <Button variant="outlined" endIcon={<DownloadForOfflineOutlinedIcon />}>Download Resume</Button> */}
+                
+                <Link to="/projects"><Button variant="outlined">Projects</Button></Link>
+                </div>
             </div>
             <div className='skills'>
                 <h1>Skills</h1>
                 <ol className='list'>
                     <li className='item'>
-                        <h2>Front-End</h2>
+                        <h2>{skill_1}</h2>
                         <span>React, Redux, Html, CSS, Bootstrap</span>
                     </li>
                     <li className='item'>
-                        <h2>Back-End</h2>
+                        <h2>{skill_2}</h2>
                         <span>React, Redux, Html, CSS, Bootstrap</span>
                     </li>
                     <li className='item'>
-                        <h2>Programming Languages</h2>
+                        <h2>{skill_3}</h2>
                         <span>React, Redux, Html, CSS, Bootstrap</span>
                     </li>
                 </ol>

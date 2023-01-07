@@ -25,6 +25,8 @@ function Navbar() {
                 <Link className='active' to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/experiences">Experiences</Link>
+                <Link to="/experiences">Resume</Link>
+                <Link to="/experiences">Contact me</Link>
             </div>
         </div>
     )

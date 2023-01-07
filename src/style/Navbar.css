@@ -53,6 +53,8 @@
   
   #open {
     height: 100vh;
+    position: fixed;
+    z-index: 1;
   }
   
   #open .links {
@@ -91,10 +93,21 @@
     }
   
     #open {
-      height: 100px;
+      height: 100vh;
+      position: fixed;
+      z-index: 1;
     }
   
     #open .links {
       flex-direction: row;
+    }
+  }
+
+  @media only screen and (max-width: 599px) {
+    .navbar {
+      height: 100%;
+      }
+      .toggleButton {
+        height: 60px;
     }
   }

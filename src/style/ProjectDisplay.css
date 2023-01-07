@@ -1,27 +1,67 @@
 .project {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.project .main-container {
+  display: flex;
+  padding: 50px 100px;
+  gap: 30px;
+}
+
+.project h1 {
+  margin-top: 50px;
+  color: #2C5F2D;
+  font-size: calc(16px + 5vmin);
+  margin-bottom: 0;
+}
+
+.project img {
+  border-radius: 10px;
+}
+
+.child-sec {
+  text-align: start;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.child-sec h3 {
+  color: #2C5F2D !important;
+  margin: 0;
+}
+
+.child-sec p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.project svg {
+  font-size: 60px;
+  color: #3e497a;
+}
+
+.button-sec {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.button-sec .MuiButton-outlined {
+  border: 1px solid #2C5F2D!important;
+  color: #2C5F2D!important;
+}
+.button-sec .MuiButton-contained{
+  background-color: #2C5F2D!important;
+}
+
+@media only screen and (max-width: 600px) {
+  .project .main-container {
     flex-direction: column;
   }
-  
-  .project h1 {
-    margin-top: 50px;
-    color: #3e497a;
-    font-size: 35px;
+
+  .project .main-container {
+    padding: 50px calc(15px + 5vmin);
   }
-  .project img {
-    width: 700px;
-    border-radius: 10px;
-  }
-  
-  .project p {
-    font-size: 40px;
-    color: #3e497a;
-  }
-  
-  .project svg {
-    font-size: 60px;
-    color: #3e497a;
-  }
+}
